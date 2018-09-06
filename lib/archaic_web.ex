@@ -22,7 +22,6 @@ defmodule ArchaicWeb do
       use Phoenix.Controller, namespace: ArchaicWeb
       import Plug.Conn
       import ArchaicWeb.Router.Helpers
-      import ArchaicWeb.Gettext
     end
   end
 
@@ -36,7 +35,6 @@ defmodule ArchaicWeb do
 
       import ArchaicWeb.Router.Helpers
       import ArchaicWeb.ErrorHelpers
-      import ArchaicWeb.Gettext
     end
   end
 
@@ -51,7 +49,6 @@ defmodule ArchaicWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import ArchaicWeb.Gettext
     end
   end
 
