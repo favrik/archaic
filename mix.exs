@@ -37,7 +37,8 @@ defmodule Archaic.Mixfile do
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:ecto_materialized_path, "~> 0.2.0"}
     ]
   end
 
