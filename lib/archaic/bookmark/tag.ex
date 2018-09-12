@@ -1,19 +1,17 @@
-defmodule Archaic.Group do
+defmodule Archaic.Bookmark.Tag do
   use Ecto.Schema
   import Ecto.Changeset
 
-  use EctoMaterializedPath
 
-  schema "groups" do
+  schema "tags" do
     field :name, :string
-    field :path, EctoMaterializedPath.Path, default: [] # default is important here
 
     timestamps()
   end
 
   @doc false
-  def changeset(group, attrs) do
-    group
+  def changeset(tag, attrs) do
+    tag
     |> cast(attrs, [:name])
     |> validate_required([:name])
     |> unique_constraint(:name)

@@ -51,6 +51,7 @@ url_tags
 
 
 
+
 (no updated_at)
 url_markup
 - url_id
@@ -70,7 +71,12 @@ Url < Archive
     < Assets
 Group
 
-Tag
+Bookmark : URL
+         : Tag
+
+Project : URL
+        : Tag
+
 
 Learn Elixir
 - umbrella apps
